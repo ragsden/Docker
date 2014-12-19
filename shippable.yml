@@ -1,7 +1,8 @@
 language: python
 
 build_image: htmlgraphic/postfix
-
+env:
+ - abc=def nnn=fff
 
 before_script:
   - cd $PWD && curl -L "https://shunit2.googlecode.com/files/shunit2-2.1.6.tgz" | tar zx
@@ -10,6 +11,8 @@ before_script:
 
 script:
   - echo $PWD
+  - echo $abc
+  - echo $nnn
   - cd $PWD
   - ls -la
   - bash Docker/Postfix/run.sh &
