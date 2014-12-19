@@ -12,6 +12,6 @@ script:
   - echo $PWD
   - cd $PWD
   - ls -la
-  - cd Docker/Postfix && . build_tests.sh
+  - . Docker/Postfixbuild_tests.sh
 
 cache: true
