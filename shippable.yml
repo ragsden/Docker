@@ -12,6 +12,7 @@ script:
   - echo $PWD
   - cd $PWD
   - ls -la
+  - bash Docker/Postfix/run.sh
   - bash Docker/Postfix/build_tests.sh
 
 cache: true
