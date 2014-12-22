@@ -2,7 +2,7 @@ language: python
 
 build_image: htmlgraphic/postfix
 env:
- - abc=def nnn=fff
+ - abc=def nnn=fff1
 
 before_script:
   - cd $PWD && curl -L "https://shunit2.googlecode.com/files/shunit2-2.1.6.tgz" | tar zx
